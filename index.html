@@ -1,70 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="AdaPhase: Navigating the Trajectory with Adaptive Frequency Modulation for Content-preserving Stylization">
+  <meta name="description" content="AdaPhase is a training-free diffusion stylization method that preserves content through low-frequency phase refinement and SNR-adaptive spectral alignment.">
+  <meta name="keywords" content="Text-guided Image Stylization, Diffusion Models, Frequency Analysis, machine learning, computer vision, AI">
+  <meta name="author" content="Sekwang Lee, Ilwoo Lyu">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
+  <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="og:site_name" content="POSTECH">
+  <meta property="og:title" content="AdaPhase: Navigating the Trajectory with Adaptive Frequency Modulation for Content-preserving Stylization">
+  <meta property="og:description" content="Training-free, content-preserving image stylization with adaptive frequency modulation.">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <!-- TODO: Replace with actual public website URL -->
+  <meta property="og:url" content="https://YOUR_PUBLIC_URL/">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
+  <!-- TODO: Replace with actual preview image URL -->
+  <meta property="og:image" content="https://YOUR_PUBLIC_URL/static/images/introduction_new.png">
+  <!-- <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630"> -->
+  <meta property="og:image:alt" content="AdaPhase - Research Preview">
+
+  <!-- Academic / Research Metadata -->
+  <meta name="citation_title" content="AdaPhase: Navigating the Trajectory with Adaptive Frequency Modulation for Content-preserving Stylization">
+  <meta name="citation_author" content="Sekwang Lee">
+  <meta name="citation_author" content="Ilwoo Lyu">
+  <meta name="citation_publication_date" content="2027">
+  <meta name="citation_conference_title" content="IEEE/CVF Winter Conference on Applications of Computer Vision">
+
+  <!-- TODO: Update after deployment if the PDF is publicly accessible -->
+  <meta name="citation_pdf_url" content="https://YOUR_PUBLIC_URL/static/pdfs/paper.pdf">
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,24 +51,22 @@
   <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <!-- Page Title -->
+  <title>AdaPhase | WACV2027</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
+  <!-- Favicon -->
+  <link rel="icon" href="data:,">
+
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
+
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -97,10 +74,10 @@
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
+
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -108,131 +85,53 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "AdaPhase: Navigating the Trajectory with Adaptive Frequency Modulation for Content-preserving Stylization",
+    "description": "AdaPhase is a training-free diffusion stylization method that preserves content through low-frequency phase refinement and SNR-adaptive spectral alignment.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Sekwang Lee",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "POSTECH"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Ilwoo Lyu",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "POSTECH"
         }
       }
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
+    "url": "https://YOUR_PUBLIC_URL/",
+    "image": "https://YOUR_PUBLIC_URL/static/images/social_preview.png",
+    "keywords": [
+      "Text-guided Image Stylization",
+      "Diffusion Models",
+      "Frequency Analysis",
+      "machine learning",
+      "computer vision",
+      "AI"
     ]
   }
   </script>
 </head>
+
+
+
 <body>
-
-
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -258,27 +157,42 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="ai ai-arxiv"></i>
-                        </span>
-                        <span>Paper (arXiv)</span>
-                      </a>
-                    </span>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/Shape-Lab/AdaPhase" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+                      <!-- Paper -->
+                      <span class="link-block">
+                        <a href="static/pdfs/paper.pdf" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Paper</span>
+                        </a>
+                      </span>
+
+                      <!-- Paper (arXiv) -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/ARXIV_ID" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="ai ai-arxiv"></i>
+                          </span>
+                          <span>arXiv</span>
+                        </a>
+                      </span>
+
+                      <!-- Code -->
+                      <span class="link-block">
+                        <a href="https://github.com/Shape-Lab/AdaPhase" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fab fa-github"></i>
+                          </span>
+                          <span>Code</span>
+                        </a>
+                      </span>
+
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
@@ -288,25 +202,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      TODO: Replace with your teaser video 
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        TODO: Add your video file path here
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      TODO: Replace with your video description
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
-
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -314,33 +209,41 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img 
+          src="static/images/additional_qualitative_results1.svg"
+          alt="First research result visualization"
+          loading="lazy"
+          style="width: 60%; height: auto; display: block; margin: 0 auto;"
+        />
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Qualitative results of AdaPhase (1).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <img 
+          src="static/images/additional_qualitative_results2.svg"
+          alt="First research result visualization"
+          loading="lazy"
+          style="width: 60%; height: auto; display: block; margin: 0 auto;"
+        />
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Qualitative results of AdaPhase (2).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <img 
+          src="static/images/additional_qualitative_results3.svg"
+          alt="First research result visualization"
+          loading="lazy"
+          style="width: 60%; height: auto; display: block; margin: 0 auto;"
+        />
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Qualitative results of AdaPhase (3).
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
@@ -372,63 +275,347 @@
 <!-- End paper abstract -->
 
 
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      Paper video.
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            TODO: Replace with your YouTube video ID
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+<!-- Introduction -->
+<section class="section" id="introduction">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      Introduction
+    </h2>
+
+    <!-- Introduction Figure -->
+    <div class="has-text-centered">
+      <img
+        src="static/images/introduction_new.png"
+        alt="Introduction Figure"
+      />
+    </div>
+
+    <!-- <p class="has-text-centered">
+      Overview of the content-style trade-off.
+    </p> -->
+
+    <div class="content has-text-justified" style="margin-top: 0.5em;">
+      <p>
+        Balancing a content-style trade-off is a key challenge in text-guided image stylization of diffusion models.
+        To mitigate the limitations of substantial additional training or increased inference latency, recent studies propose training-free stylization methods that manipulate the frequency in latent space, inspired by signal processing theory in pixel space.
+        Despite their promise, they directly transfer pixel-space intuitions without sufficient analysis of what frequency manipulation implies in latent space. 
+        They also lack a principled justification for how frequency manipulation should vary across denoising timesteps, relying instead on heuristic evaluation.
+        Consequently, existing frequency-based methods often over-stylize and distort content details.
+        <br/>
+        
+        <p>
+          We introduce <b>AdaPhase</b>, a novel training-free stylization
+          method that achieves stylization while preserving content by
+          leveraging frequency domain properties and the diffusion model's SNR.
+        </p>
+
+        <ol style="margin-top: 1.5rem;">
+
+          <li style="margin-bottom: 1rem;">
+            <b>Low-Frequency Phase Refinement.</b>
+            We inject the low-frequency phase of the content image's
+            DDIM inversion latents into the denoising process.
+            This refinement shifts latents toward the predefined
+            inversion path and ensures the preservation of content structure.
+          </li>
+
+          <li style="margin-bottom: 1rem;">
+            <b>Latent Trajectory Analysis.</b>
+            PCA-based projection of latent trajectories demonstrates
+            that our strategy effectively aligns the latents,
+            particularly at timestep <i>t</i> = 0.
+          </li>
+
+          <li style="margin-bottom: 1rem;">
+            <b>Adaptive Spectral Alignment.</b>
+            Observing that high noise energy renders
+            structural predictions unreliable, we adaptively reduce the injection range proportional to the noise power of the diffusion process.
+            This enables the generation of stylistic attributes
+            without compromising the content structure.
+          </li>
+
+        </ol>
+      </p>
     </div>
   </div>
-</section> -->
-<!-- End youtube video -->
+</section>
+<!-- End Introduction -->
 
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          TODO: Add poster image for better preview
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            Your video file here
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          TODO: Add poster image for better preview
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            Your video file here
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          TODO: Add poster image for better preview
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            Your video file here
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
+<!-- Method -->
+<section class="section" id="method">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      Method
+    </h2>
+
+    <!-- <div class="content has-text-justified">
+      <p>
+        Overview of the proposed AdaPhase framework.
+      </p>
+    </div> -->
+
+    <!-- Method Overview Figure -->
+    <div class="has-text-centered">
+      <img
+        src="static/images/method.png"
+        alt="AdaPhase Method Overview"
+        style="width: 100%; height: auto;"
+      />
+    </div>
+
+    <!-- <p class="has-text-centered">
+      Overview of the proposed AdaPhase framework.
+    </p> -->
+
+    <!-- Subsection 1 -->
+    <h3 class="title is-4" style="margin-top: 1em;">
+      Low-Frequency Phase Refinement
+    </h3>
+
+    <div class="content has-text-justified">
+      <p>
+        AdaPhase <b>injects the low-frequency phase of DDIM inversion latents into the denoising process</b> to preserve content structure.
+        By blending phase vectors in the complex plane, our method avoids phase-wrapping artifacts while guiding the denoising trajectory toward the predefined inversion path.
+      </p>
+    </div>
+
+    <!-- Subsection 2 -->
+    <h3 class="title is-4">
+      Adaptive Spectral Alignment
+    </h3>
+
+    <div class="content has-text-justified">
+      <p>
+        We <b>adaptively control the frequency range of phase refinement based on the diffusion model's signal-to-noise ratio (SNR)</b>.
+        A wider refinement range at early, high-noise timesteps enforces structural consistency, while a narrower range at later timesteps allows greater flexibility in generating stylistic details.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- End Method -->
+
+
+<!-- Experiments -->
+<section class="section" id="experiments">
+  <div class="container">
+
+    <h2 class="title is-3 has-text-centered">
+      Experiments
+    </h2>
+
+
+    <!-- PCA-based Trajectory Projection -->
+    <h3 class="title is-4 has-text-centered">
+      PCA-based Trajectory Projection
+    </h3>
+
+    <div id="pca-carousel"
+         class="carousel results-carousel"
+         style="margin-bottom: 4rem;">
+
+      <!-- Result 1 -->
+      <div class="item">
+        <img
+          src="static/images/pca1.png"
+          alt="pca 1"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          We define a space of the first two principal components based on the inversion path.
+          Since stylization has no definitive ground truth,
+          we project the refined trajectories under empty-text reconstruction onto the inversion path
+          to show close alignment.
+          We evaluate the geometric proximity to the inversion path,
+          as the DDIM inversion path reveals the original image reconstruction path in reverse.
+          <b>The trajectory obtained by refining the low-frequency phase of the inversion latents
+          significantly outperforms other methods.</b>
+        </h2>
+      </div>
+
+      <!-- Result 2 -->
+      <div class="item">
+        <img
+          src="static/images/pca2.png"
+          alt="pca 2"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          Visualization of images decoded from the latents at <i>t</i> = 0 for the samples shown in the previous graph.
+          <b>While our method closely reconstructs original images,</b>
+          others tend to produce artifacts like overly emphasized contrast or blurring.
+        </h2>
       </div>
     </div>
+
+
+    <!-- Qualitative Results -->
+    <h3 class="title is-4 has-text-centered">
+      Qualitative Comparison
+    </h3>
+
+    <div id="qualitative-carousel"
+         class="carousel results-carousel">
+
+      <!-- Result 1 -->
+      <div class="item">
+        <img
+          src="static/images/qualitative1.png"
+          alt="Qualitative Comparison 1"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          Qualitative comparsion of stylization outcomes with existing methods.
+          <u>Underlined models</u> utilize the frequency domain.
+          <b>Our method achieves superior structural preservation while successfully stylizing all content-style pairs.</b>
+          In contrast, competing methods exhibit a trade-off between content preservation and stylization.
+        </h2>
+      </div>
+
+      <!-- Result 2 -->
+      <div class="item">
+        <img
+          src="static/images/qualitative2.png"
+          alt="Qualitative Comparison 2"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          Qualitative comparison of stylization outcomes with recent works.
+          While most methods generate plausible stylized images,
+          <b>our method consistently achieves content-preserving stylization across all images.</b>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Quantitative Results -->
+    <h3 class="title is-4 has-text-centered"
+        style="margin-top: 3rem; margin-bottom: 4rem;">
+      Quantitative Comparison
+    </h3>
+
+    <div class="has-text-centered">
+      <img
+        src="static/images/quantitative.png"
+        alt="Quantitative Results"
+        style="width: 70%; height: auto;"
+      />
+    </div>
+
+    <p class="has-text-centered" style="margin-top: 0.5em; color: #64748b;">
+      Quantitative comparison with existing methods.
+      Higher DINO scores tend to correlate with lower Aesthetic scores in the baseline methods.
+      In contrast, <b>our method achieves the highest DINO score while maintaining a competitive Aesthetic score.</b>
+      Consequently, <b>our model is positioned in the upper-right corner of the plot,
+      representing an optimal balance between style editing accuracy and content preservation.</b>
+    </p>
+
+    <!-- Ablation Study -->
+    <h3 class="title is-4 has-text-centered" style="margin-top: 4rem;">
+      Ablation Study
+    </h3>
+
+    <div id="ablation-carousel"
+         class="carousel results-carousel"
+         style="margin-bottom: 4rem;">
+
+      <!-- Result 1 -->
+      <div class="item">
+        <img
+          src="static/images/ablation1.png"
+          alt="ablation study 1"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          Qualitative ablation study of different decay approaches.
+          <b>Our method shows content-style-balanced images.</b>
+          Convex decay results in structural collapse,
+          while concave decay and the step function lead to weak stylization.
+        </h2>
+      </div>
+
+      <!-- Result 2 -->
+      <div class="item">
+        <img
+          src="static/images/ablation2.png"
+          alt="ablation study 2"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          We further equalize the total spectral injection of convex decay with our method
+          to ensure the collapse is not due to insufficient injection.
+          Convex decay fails to preserve content structure even with larger initial injection strength hyperparameter (lambda_init).
+          This implies the injection schedule is critical for content-preserving stylization.
+        </h2>
+      </div>
+    </div>
+
+
+    <!-- Additional Experiments -->
+    <h3 class="title is-4 has-text-centered">
+      Additional Experiments
+    </h3>
+
+    <div id="additional-carousel"
+         class="carousel results-carousel">
+
+      <!-- Result 1 -->
+      <div class="item">
+        <img
+          src="static/images/additional1.png"
+          alt="additional experiments 1"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          Robustness across different samplers and model backbones.
+          We use the style text “pixel art” for all images.
+          <b>AdaPhase maintains its robustness across sampling methods and model backbones
+          when the underlying generative dynamics can be formulated as deterministic ODEs.</b>
+        </h2>
+      </div>
+
+      <!-- Result 2 -->
+      <div class="item">
+        <img
+          src="static/images/additional2.png"
+          alt="additional experiments 2"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          <b>We additionally integrate our method with IP-Adapter
+          and demonstrate its applicability to tasks that take a style image as input.</b>
+          AdaPhase successfully reflects the reference style while achieving content preservation.
+        </h2>
+      </div>
+
+      <!-- Result 3 -->
+      <div class="item">
+        <img
+          src="static/images/additional3.png"
+          alt="additional experiments 3"
+          loading="lazy"
+          style="width: 80%; height: auto; display: block; margin: 0 auto;"
+        />
+        <h2 class="subtitle has-text-centered">
+          While AdaPhase preserves content structure by injecting the low-frequency phase of the inversion latent,
+          <b>it still allows low-frequency attributes (e.g., object contours and colors) to be stylized.</b>
+        </h2>
+      </div>
+    </div>
+
   </div>
-</section> -->
-<!-- End video carousel -->
-
-
-
-
+</section>
+<!-- End Experiments -->
 
 
 <!-- Paper poster -->
@@ -437,6 +624,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
+      Coming soon!
       TODO: Replace with your poster PDF
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
@@ -459,7 +647,7 @@
         </button>
       </div>
       <pre id="bibtex-code"><code>@inproceedings{lee2027adaphase,
-  title={Navigating the Trajectory with Adaptive Frequency Modulation for Content-preserving Stylization},
+  title={AdaPhase: Navigating the Trajectory with Adaptive Frequency Modulation for Content-preserving Stylization},
   author={Sekwang Lee and Ilwoo Lyu},
   booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
   year={2027}
@@ -468,6 +656,7 @@
 </section>
 <!--End BibTex citation -->
 
+</main>
 
   <footer class="footer">
   <div class="container">
